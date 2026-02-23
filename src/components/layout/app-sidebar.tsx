@@ -6,17 +6,24 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { APP_CONFIG } from "@/lib/config";
 import {
-  LayoutDashboard,
+  UtensilsCrossed,
+  Disc3,
+  Trophy,
+  User,
+  Clock,
   ChevronLeft,
   ChevronRight,
   Lightbulb,
-  User,
   ArrowRight,
   Github,
 } from "lucide-react";
 
 const navItems = [
-  { href: "/", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/", label: "Tonight's Pick", icon: UtensilsCrossed },
+  { href: "/spin", label: "Spin the Wheel", icon: Disc3 },
+  { href: "/bracket", label: "Group Bracket", icon: Trophy },
+  { href: "/taste-profile", label: "My Taste Profile", icon: User },
+  { href: "/history", label: "Decision History", icon: Clock },
 ];
 
 interface SidebarContentProps {

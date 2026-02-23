@@ -23,7 +23,7 @@ export function FlowDiagram({ steps }: FlowDiagramProps) {
               "flex items-center gap-2 rounded-lg border px-3 py-2",
               step.highlight
                 ? "border-primary bg-primary/5"
-                : "border-border bg-card"
+                : "border-border/60 bg-card"
             )}
           >
             <step.icon className="w-4 h-4 shrink-0 text-muted-foreground" />
